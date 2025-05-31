@@ -28,10 +28,10 @@ st.set_page_config(
 )
 
 # Ajoutez une protection par mot de passe (optionnel)
-password = st.text_input("Entrez le mot de passe", type="password")
+password = st.text_input("Entrez le mot de passe", type="PASSWORD")
 if password != st.secrets.get("PASSWORD"):
     st.error("Accès refusé. Contactez l'administrateur.")
-    st.stop()  # Bloque l'accès si le mot de passe est incorrect
+    st.stop()
 
 st.markdown("""
 <style>
