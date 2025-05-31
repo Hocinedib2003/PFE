@@ -27,6 +27,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Ajoutez une protection par mot de passe (optionnel)
+password = st.text_input("Entrez le mot de passe", type="password")
+if password != st.secrets.get("PASSWORD"):
+    st.error("Accès refusé. Contactez l'administrateur.")
+    st.stop()  # Bloque l'accès si le mot de passe est incorrect
+
 st.markdown("""
 <style>
     /* Style du titre principal */
