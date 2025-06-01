@@ -197,18 +197,18 @@ def load_models():
     try:
         from Models.unet_model import UNet
         seg_model = UNet()
-        seg_model.load_state_dict(torch.load('C:/Users/Hocine/Desktop/PFE/coding/diagnostic/public/Models/aml_unet.pth', map_location='cpu'))
+        seg_model.load_state_dict(torch.load('diagnostic/public/Models/aml_unet.pth', map_location='cpu'))
         seg_model.eval()
         models['seg_model'] = seg_model
 
         from Models.vit_model import VisionTransformer
         vit_model = VisionTransformer()
-        vit_model.load_state_dict(torch.load('C:/Users/Hocine/Desktop/PFE/coding/diagnostic/public/Models/vit_cell_classifier.pth', map_location='cpu'))
+        vit_model.load_state_dict(torch.load('diagnostic/public/Models/vit_cell_classifier.pth', map_location='cpu'))
         vit_model.eval()
         models['classif_model'] = vit_model
 
-        models['blood_model'] = joblib.load('C:/Users/Hocine/Desktop/PFE/coding/diagnostic/public/Models/blood_cancer_classifier.pkl')
-        models['label_encoder'] = joblib.load('C:/Users/Hocine/Desktop/PFE/coding/diagnostic/public/Models/label_encoder.pkl')
+        models['blood_model'] = joblib.load('diagnostic/public/Models/blood_cancer_classifier.pkl')
+        models['label_encoder'] = joblib.load('diagnostic/public/Models/label_encoder.pkl')
 
         return models
 
