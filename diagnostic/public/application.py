@@ -27,17 +27,17 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-password = st.text_input("Entrez le mot de passe", type="password")
-
-if password:
-    if password == st.secrets.get("PASSWORD"):
-        st.success("✅ Accès autorisé")
-    else:
-        st.error("❌ Accès refusé. Contactez l'administrateur.")
-        st.stop()
-else:
-    st.warning("⛔ Veuillez entrer le mot de passe pour accéder à l'application.")
-    st.stop()
+# password = st.text_input("Entrez le mot de passe", type="password")
+#
+# if password:
+#     if password == st.secrets.get("PASSWORD"):
+#         st.success("✅ Accès autorisé")
+#     else:
+#         st.error("❌ Accès refusé. Contactez l'administrateur.")
+#         st.stop()
+# else:
+#     st.warning("⛔ Veuillez entrer le mot de passe pour accéder à l'application.")
+#     st.stop()
 
 st.markdown("""
 <style>
