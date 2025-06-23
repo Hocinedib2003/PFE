@@ -528,26 +528,26 @@ with tab2:
 
         with col1:
             st.markdown("**Paramètres de base**")
-            age = st.number_input("Âge (années)", min_value=0, max_value=120, value=30)
-            wbc = st.number_input("WBC (G/L)", min_value=0.0, max_value=100.0, value=6.5, step=0.1)
-            platelets = st.number_input("Plaquettes (G/L)", min_value=0.0, max_value=2000.0, value=250.0)
-            fibrinogen = st.number_input("Fibrinogène (g/L)", min_value=0.0, max_value=10.0, value=3.0, step=0.1)
+            age = st.number_input("Âge (années)", min_value=0, max_value=120, value=72)
+            wbc = st.number_input("WBC (G/L)", min_value=0.0, max_value=100.0, value=26.7, step=0.1)
+            platelets = st.number_input("Plaquettes (G/L)", min_value=0.0, max_value=2000.0, value=63.0)
+            fibrinogen = st.number_input("Fibrinogène (g/L)", min_value=0.0, max_value=10.0, value=4.86, step=0.1)
 
         with col2:
             st.markdown("**Paramètres érythrocytaires**")
-            mcv = st.number_input("MCV (fL)", min_value=50.0, max_value=120.0, value=90.0)
-            mchc = st.number_input("MCHC (g/L)", min_value=200.0, max_value=400.0, value=330.0)
-            pt = st.number_input("Temps de prothrombine (%)", min_value=0, max_value=150, value=100)
+            mcv = st.number_input("MCV (fL)", min_value=50.0, max_value=120.0, value=93.0)
+            mchc = st.number_input("MCHC (g/L)", min_value=200.0, max_value=400.0, value=351.0)
+            pt = st.number_input("Temps de prothrombine (%)", min_value=0, max_value=47, value=100)
 
         with col3:
             st.markdown("**Paramètres leucocytaires**")
-            ldh = st.number_input("LDH (UI/L)", min_value=0, max_value=5000, value=250)
-            anc_percent = st.number_input("ANC (%)", min_value=0.0, max_value=100.0, value=50.0)
-            anc_abs = st.number_input("ANC (G/L)", min_value=0.0, max_value=50.0, value=3.0)
-            lymph_percent = st.number_input("Lymphocytes (%)", min_value=0.0, max_value=100.0, value=30.0)
-            lymph_abs = st.number_input("Lymphocytes (G/L)", min_value=0.0, max_value=50.0, value=2.0)
-            mono_percent = st.number_input("Monocytes (%)", min_value=0.0, max_value=100.0, value=8.0)
-            mono_abs = st.number_input("Monocytes (G/L)", min_value=0.0, max_value=50.0, value=0.5)
+            ldh = st.number_input("LDH (UI/L)", min_value=0, max_value=1038, value=250)
+            anc_percent = st.number_input("ANC (%)", min_value=0.0, max_value=100.0, value=20.0)
+            anc_abs = st.number_input("ANC (G/L)", min_value=0.0, max_value=50.0, value=5.34)
+            lymph_percent = st.number_input("Lymphocytes (%)", min_value=0.0, max_value=100.0, value=22.0)
+            lymph_abs = st.number_input("Lymphocytes (G/L)", min_value=0.0, max_value=50.0, value=5.87)
+            mono_percent = st.number_input("Monocytes (%)", min_value=0.0, max_value=100.0, value=10.0)
+            mono_abs = st.number_input("Monocytes (G/L)", min_value=0.0, max_value=50.0, value=2.67)
 
         submitted = st.form_submit_button("Analyser")
 
